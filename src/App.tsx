@@ -1,11 +1,20 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 
-import MainNavigation from './components/layout/MainNavigation';
+import Layout from "./components/layout/Layout/Layout";
+import NewBet from "./pages/NewBet";
 
 function App() {
   return (
-   <MainNavigation />
+    <Layout>
+      <BrowserRouter >
+      <Switch>
+        <Route path="/bet" exact>
+          <NewBet />
+        </Route>
+      </Switch>
+      </BrowserRouter>
+    </Layout>
   );
 }
 

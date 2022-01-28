@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import FontStyles from "../../../global/FontStyles";
 
-import MainNavigation from "../MainNavigation";
+import MainNavigation from "../MainNavigation/MainNavigation";
 import { StyledContainer } from "./styled";
 
 
