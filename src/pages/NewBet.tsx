@@ -3,9 +3,10 @@ import GameButton from "../components/UI/GameButton/GameButton";
 import SubTitle from "../components/UI/SubTitle/SubTitle";
 import Title from "../components/UI/Title/Title";
 import Text from "../components/UI/Text/Text";
-import NumberButton from "../components/UI/NumberButton/NumberButton";
+import NumbersList from "../components/NewBet/NumbersList";
 
 const Bet = () => {
+  const gameNumbers: number[] = [1, 2, 4, 5, 6, 7, 8, 9];
   return (
     <Row>
       <Col xs={12} md={8}>
@@ -20,7 +21,7 @@ const Bet = () => {
           12, 13, 14 ou 15 números. São muitas chances de ganhar, e agora você
           joga de onde estiver!
         </Text>
-        <NumberButton>1</NumberButton>
+        <NumbersList numbers={gameNumbers} />
       </Col>
       <Col xs={12} md={4}>
         <Text>Cart</Text>
