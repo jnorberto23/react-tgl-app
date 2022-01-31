@@ -1,8 +1,7 @@
 import { StyledButton } from "./styled";
 
 const GameButton = (props: any) => {
-  const { action, color, children } = props;
-
+  const { action, color, value } = props;
   return (
     <StyledButton
       className="btn btn-sm"
@@ -10,7 +9,7 @@ const GameButton = (props: any) => {
       color={color}
       onClick={action}
     >
-      {children}
+      {value}
     </StyledButton>
   );
 };
