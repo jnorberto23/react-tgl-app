@@ -17,7 +17,6 @@ export const fetchGameData = () => {
 
         try {
             const gameData = await fetchData();
-            console.log('gameData', gameData)
             dispatch(
                 gameActions.changeGame({
                     id: gameData.id,
@@ -28,6 +27,27 @@ export const fetchGameData = () => {
                     max_number: gameData.max_number,
                     color: gameData.color,
                     created_at: gameData.created_at,
+                })
+            );
+        } catch (error) {
+            console.log(error)
+        }
+    };
+};
+
+export const changeGameContext = (data: any) => {
+    return async (dispatch: any) => {
+        try {
+            dispatch(
+                gameActions.changeGame({
+                    id: data.id,
+                    type: data.type,
+                    description: data.description,
+                    range: data.range,
+                    price: data.price,
+                    max_number: data.max_number,
+                    color: data.color,
+                    created_at: data.created_at,
                 })
             );
         } catch (error) {
