@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Button } from 'react-bootstrap'
 
-export const ButtonGame = styled(Button)`
+export const StyledButton = styled(Button)`
   background-color: #fff;
-  margin: 30px 5px 5px 5px;
+  margin: 0px 5px 15px 5px;
   width: 100px;
   border-color:  ${(props: any) => props.color};
   border: 2px solid;

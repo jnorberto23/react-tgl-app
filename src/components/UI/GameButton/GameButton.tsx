@@ -1,18 +1,18 @@
-import { ButtonGame } from "./styled";
+import { StyledButton } from "./styled";
 
-const Buttons = (props: any) => {
+const GameButton = (props: any) => {
   const { action, color, children } = props;
 
   return (
-    <ButtonGame
+    <StyledButton
       className="btn btn-sm"
       variant="light"
       color={color}
       onClick={action}
     >
       {children}
-    </ButtonGame>
+    </StyledButton>
   );
 };
 
-export default Buttons;
+export default GameButton;

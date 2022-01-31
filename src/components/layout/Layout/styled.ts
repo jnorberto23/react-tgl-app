@@ -7,4 +7,5 @@ export const StyledContainer = styled(Container)`
   background: #f7f7f7 0% 0% no-repeat padding-box;
   width: 100vw;
   height: 90vh;
+  padding: 20px;
 `;
