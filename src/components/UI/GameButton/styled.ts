@@ -14,8 +14,10 @@ export const StyledButton = styled(Button)`
     border-color:  ${(props: any) => props.color};
     color: #fff
   };
-  &:active {
+  &:focus {
     background-color: ${(props: any) => props.color};
     border-color:  ${(props: any) => props.color};
+    box-shadow:none !important;
+    color: #fff;
   }
 `;  
