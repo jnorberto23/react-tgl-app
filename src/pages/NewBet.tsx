@@ -3,6 +3,7 @@ import GameButton from "../components/UI/GameButton/GameButton";
 import SubTitle from "../components/UI/SubTitle/SubTitle";
 import Title from "../components/UI/Title/Title";
 import Text from "../components/UI/Text/Text";
+import NumberButton from "../components/UI/NumberButton/NumberButton";
 
 const Bet = () => {
   return (
@@ -19,6 +20,7 @@ const Bet = () => {
           12, 13, 14 ou 15 números. São muitas chances de ganhar, e agora você
           joga de onde estiver!
         </Text>
+        <NumberButton>1</NumberButton>
       </Col>
       <Col xs={12} md={4}>
         <Text>Cart</Text>
