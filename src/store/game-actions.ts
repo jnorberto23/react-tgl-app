@@ -32,3 +32,18 @@ export const changeGameContext = (data: any) => {
         }
     };
 };
+
+
+export const changeSelectedNumbers = (number: any) => {
+    return async (dispatch: any) => {
+        try {
+            dispatch(
+                gameActions.addNumber({
+                    number: number,
+                })
+            );
+        } catch (error) {
+            console.log(error)
+        }
+    };
+};
