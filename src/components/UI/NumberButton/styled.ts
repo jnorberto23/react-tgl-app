@@ -4,8 +4,8 @@ import { Button } from 'react-bootstrap'
 export const StyledButton = styled(Button)`
   margin: 0px 5px 15px 5px;
   font-weight: bold;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #ADC0C4;
   color:  #ADC0C4;
   border-radius: 100%;

@@ -1,9 +1,13 @@
 import { Fragment } from "react";
 import NumberButton from "../UI/NumberButton/NumberButton";
 
-const NumbersList = (props: any) => {
-  const numbers: any = props.numbers;
+const NumbersList = (props: { range: number }) => {
+  const { range } = props;
+  let numbers: number[] = [];
 
+  for (let i = 1; i <= range; i++) {
+    numbers.push(i);
+  }
   return (
     <Fragment>
       {numbers.map((number: any) => {

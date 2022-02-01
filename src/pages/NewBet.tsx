@@ -7,6 +7,7 @@ import Text from "../components/UI/Text/Text";
 import GamesList from "../components/NewBet/GamesList";
 import { useEffect } from "react";
 import { fetchGameData } from "../store/game-actions";
+import NumbersList from "../components/NewBet/NumbersList";
 
 const Bet = () => {
   const dispatch = useDispatch();
@@ -63,7 +64,7 @@ const Bet = () => {
         <GamesList games={games} />
         <SubTitle>Fill Your Bet</SubTitle>
         <Text>{selectedGame.description}</Text>
-        {/* <NumbersList numbers={selectedGame.numbers} /> */}
+        <NumbersList range={selectedGame.range} />
       </Col>
       <Col xs={12} md={4}>
         <Text>Cart</Text>
