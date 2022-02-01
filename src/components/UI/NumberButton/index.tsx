@@ -8,7 +8,7 @@ const NumberButton = (props: any) => {
       className="btn btn-sm"
       variant="light"
       color={color}
-      onClick={action}
+      onClick={action.bind(null, children)}
     >
       {children}
     </StyledButton>

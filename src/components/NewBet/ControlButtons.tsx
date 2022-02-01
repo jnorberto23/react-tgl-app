@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Row } from "react-bootstrap";
 import ControlButton from "../UI/ControlButton";
+import Text from "../UI/Text"
 
 const ControlButtons = () => {
   return (

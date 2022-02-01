@@ -9,7 +9,6 @@ const GameButton = (props: any) => {
       color={value.color}
       onClick={action.bind(null, value)}
     >
-      {console.log(value, enabled)}
       {value.type}
     </StyledButton>
   );
