@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import NumberButton from "../UI/NumberButton/NumberButton";
+import NumberButton from "../UI/NumberButton";
 
 const NumbersList = (props: { range: number }) => {
   const { range } = props;

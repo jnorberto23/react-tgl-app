@@ -1,14 +1,16 @@
 import { Col, Row } from "react-bootstrap";
 import { useSelector, useDispatch, RootStateOrAny } from "react-redux";
-
-import SubTitle from "../components/UI/SubTitle/SubTitle";
-import Title from "../components/UI/Title/Title";
-import Text from "../components/UI/Text/Text";
-import GamesList from "../components/NewBet/GamesList";
 import { useEffect, useState } from "react";
 import { fetchGameData } from "../store/game-actions";
-import NumbersList from "../components/NewBet/NumbersList";
+
 import { GetAllGames } from "../lib/api";
+
+import SubTitle from "../components/UI/SubTitle";
+import Title from "../components/UI/Title";
+import Text from "../components/UI/Text";
+import GamesList from "../components/NewBet/GamesList";
+import NumbersList from "../components/NewBet/NumbersList";
+import ControlButtons from "../components/NewBet/ControlButtons";
 
 const Bet = () => {
   const dispatch = useDispatch();
@@ -37,6 +39,7 @@ const Bet = () => {
       <Col xs={12} md={4}>
         <Text>Cart</Text>
       </Col>
+      <ControlButtons/>
     </Row>
   );
 };
